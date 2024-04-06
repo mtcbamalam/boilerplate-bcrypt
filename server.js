@@ -8,9 +8,9 @@ const saltRounds = 12;
 const myPlaintextPassword = 'sUperpassw0rd!';
 //START_ASYNC -do not remove notes, place code between correct pair of notes.
 bcrypt.hash(myPlaintextPassword, saltRounds, (_err, hash) => {
-    console.log(hash);
+    
     bcrypt.compare(myPlaintextPassword, hash, (_err, res) => {
-      console.log(res);
+      
     });
   });
  
@@ -19,8 +19,9 @@ bcrypt.hash(myPlaintextPassword, saltRounds, (_err, hash) => {
 //START_SYNC
 
 var hash = bcrypt.hashSync(myPlaintextPassword, saltRounds);
+console.log(hash)
 var res = bcrypt.compareSync(myPlaintextPassword, hash);
-
+console.log(results);
 //END_SYNC
 
 
