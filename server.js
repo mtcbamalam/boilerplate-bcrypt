@@ -18,36 +18,11 @@ const myPlaintextPassword = 'sUperpassw0rd!';
 
 //START_SYNC
 
-var hash = bcrypt.hashSync(myPlaintextPassword, saltRounds);
-console.log(hash)
-var res = bcrypt.compareSync(myPlaintextPassword, hash);
-console.log(results);
+let hash = bcrypt.hashSync(myPlaintextPassword, saltRounds);
+console.log(hash);
+let result = bcrypt.compareSync(myPlaintextPassword, hash);
+console.log(result);
 //END_SYNC
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
