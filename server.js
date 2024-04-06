@@ -52,19 +52,4 @@ console.log(results);
 
 
 app.listen(process.env.PORT || 3000, () => {});
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log("Listening on port:", PORT)
-});
-
-function newFunction() {
-  let hash = bcrypt.hashSync(myPlaintextPassword, saltRounds);
-  console.log(hash);
-  console.log(results);
-  var hash = bcrypt.hashSync(myPlaintextPassword, saltRounds);
-  console.log(hash);
-
-  var hash = bcrypt.hashSync(myPlaintextPassword, hash);
-  console.log(results);
-}
 
