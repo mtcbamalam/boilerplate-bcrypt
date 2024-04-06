@@ -21,9 +21,11 @@ bcrypt.hash(myPlaintextPassword, saltRounds, (err, hash) => {
 //END_ASYNC
 
 //START_SYNC
+var hash = bcrypt.hashSync(myPlaintextPassword, saltRounds);
+console.log(hash);
 
-
-
+var hash = bcrypt.hashSync(myPlaintextPassword, saltRounds);
+console.log(result);
 //END_SYNC
 
 
